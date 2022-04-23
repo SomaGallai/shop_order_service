@@ -1,6 +1,6 @@
 # AltaPay DevOps Technical Test
 
-[![Gradle Package](https://github.com/SomaGallai/shop_order_service/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/SomaGallai/shop_order_service/actions/workflows/gradle-publish.yml)
+[![Gradle Package](https://github.com/SomaGallai/shop_order_service/actions/workflows/gradle-publish.yml/badge.svg?branch=main)](https://github.com/SomaGallai/shop_order_service/actions/workflows/gradle-publish.yml)
 
 This project contains a Shop Order service written in Java, that you can Run as specified in the section [Run](.README.md#run)
 
@@ -10,8 +10,8 @@ The objective of the test is build, package, and deploy the service to an AWS ac
 
 **Functional Requirements**
 
-- [ ] Create a build step that will ensure the code can be built
-- [ ] Create a package step that will publish the docker image to a registry
+- [X] Create a build step that will ensure the code can be built
+- [X] Create a package step that will publish the docker image to a registry
 - [ ] Create a provision step that will create the container environment for the image to run
 - [ ] Create a deploy step that will run the docker image in the container environment created above
 
