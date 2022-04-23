@@ -1,5 +1,7 @@
 # AltaPay DevOps Technical Test
 
+[![Gradle Package](https://github.com/SomaGallai/shop_order_service/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/SomaGallai/shop_order_service/actions/workflows/gradle-publish.yml)
+
 This project contains a Shop Order service written in Java, that you can Run as specified in the section [Run](.README.md#run)
 
 The objective of the test is build, package, and deploy the service to an AWS account
