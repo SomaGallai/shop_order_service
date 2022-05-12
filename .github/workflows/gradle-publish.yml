@@ -39,7 +39,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: docker_frontend
-        IMAGE_TAG: docker_frontend_image-${{ GITHUB_REF#refs/*/ }}
+        IMAGE_TAG: docker_frontend_image
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG-${{ GITHUB_REF#refs/*/ }} .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG-${{ GITHUB_REF#refs/*/ }}
