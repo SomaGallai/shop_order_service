@@ -41,5 +41,5 @@ jobs:
         ECR_REPOSITORY: docker_frontend
         IMAGE_TAG: docker_frontend_image
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG-${{ GITHUB_REF#refs/*/ }} .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG-${{ GITHUB_REF#refs/*/ }}
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG-${GITHUB_REF#refs/*/} .
+        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG-${GITHUB_REF#refs/*/}
